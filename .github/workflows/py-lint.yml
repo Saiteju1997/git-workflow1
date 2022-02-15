@@ -9,7 +9,7 @@ on:
  workflow_dispatch:
  
 jobs:
- call-workflow-in-another-repo:
+ test:
    uses: saiteja-organization/test1/.github/workflows/main.yml@testing
    with:
       workflow_id: py-lint.yml
