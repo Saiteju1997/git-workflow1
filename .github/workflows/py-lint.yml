@@ -2,7 +2,7 @@ name: Lint dockerfile
 on: 
  push: 
    branches:
-     - test
+     - sample
  pull_request:
    branches:
      - main
