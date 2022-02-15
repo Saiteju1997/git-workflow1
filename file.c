@@ -1,5 +1,3 @@
 sample code()
 {}
 
-
-
