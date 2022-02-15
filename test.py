@@ -5,6 +5,3 @@ try:
     print ('sum =', total)
 except ValueError:
     print ('Please supply integer arguments')
-    
-
-   
