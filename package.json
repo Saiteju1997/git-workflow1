@@ -1,5 +1,5 @@
  "dependencies": {
-    "@google-cloud/storage": "^5.18.2",
+    "@google-cloud/storag": "^5.18.2",
     "@sentry/node": "^6.18.1",
     "@sinclair/typebox": "^0.23.4",
     "axios": "^0.26.0",
