@@ -31,5 +31,5 @@ jobs:
         env:
           GIT_TAG: date +"%Y-%m-%d-%T"
         run: |
-          HI, Now the time is $GIT_TAG, Enjoy your day.
+           echo  "HI, Now the time is $GIT_TAG, Enjoy your day."
 
