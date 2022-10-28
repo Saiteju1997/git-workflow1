@@ -47,5 +47,3 @@ jobs:
 
       - name: "Terraform apply"
         run: terraform apply tfplan.out
-        env:
-          TF_VAR: ${{ github.sha }}
