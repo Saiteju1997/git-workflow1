@@ -14,3 +14,7 @@ resource "null_resource" "consulrollout" {
     command = "echo ${var.git_hash}"
   }
 }
+
+variable "git_hash" {
+  type = string
+}
