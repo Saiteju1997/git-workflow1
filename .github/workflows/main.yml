@@ -41,11 +41,11 @@ jobs:
         run: terraform init
 
       - name: "Terraform plan"
-        run: terraform  plan
+        run: terraform  plan -var="git_hash=$TF_VAR"
         env:
           TF_VAR: ${{ github.sha }}
 
       - name: "Terraform apply"
-        run: terraform apply tfplan.out
+        run: terraform apply tfplan.out -var="git_hash=$TF_VAR"
         env:
           TF_VAR: ${{ github.sha }}
