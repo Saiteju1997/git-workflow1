@@ -34,5 +34,12 @@ jobs:
              echo $TF_VAR
         env:
           TF_VAR: ${{ github.sha }}
+          
+      - name: "Terraform init"
+        run: terraform init
 
+      - name: "Terraform plan"
+        run: terraform  plan -out=tfplan.out
 
+      - name: "Terraform apply"
+        run: terraform apply tfplan.out
