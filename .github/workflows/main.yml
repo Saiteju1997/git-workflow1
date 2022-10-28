@@ -46,6 +46,6 @@ jobs:
           TF_VAR: ${{ github.sha }}
 
       - name: "Terraform apply"
-        run: terraform apply tfplan.out -var="git_hash=$TF_VAR"
+        run: terraform apply -var="git_hash=$TF_VAR" tfplan.out
         env:
           TF_VAR: ${{ github.sha }}
