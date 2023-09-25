@@ -1,0 +1,19 @@
+name: Lint dockerfile 
+on: 
+ push: 
+   branches:
+     - test
+ pull_request:
+   branches:
+     - main
+ workflow_dispatch:
+ 
+jobs:
+ call-workflow-in-another-repo:
+   uses: saiteja-organization/test1/.github/workflows/main.yml@testing
+   with:
+      workflow_id: py-lint.yml
+      files_to_match: \.(py|pyc)$
+   secrets:
+      gh_token: ${{ secrets.gh_token }} 
+      
